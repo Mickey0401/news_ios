@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Lato-Medium.ttf">
+            <string>Lato-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SelectionView" customModule="havr" customModuleProvider="target">
+            <connections>
+                <outlet property="selectionInterestCollection" destination="VXV-rF-Mrk" id="g8B-8M-ybv"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" restorationIdentifier="SelectionView" id="DIh-qq-1jM">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="224"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NHy-gB-Uk7">
+                    <rect key="frame" x="0.0" y="5" width="414" height="15"/>
+                    <color key="backgroundColor" red="0.93725490196078431" green="0.93725490196078431" blue="0.93725490196078431" alpha="1" colorSpace="calibratedRGB"/>
+                </view>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceHorizontal="YES" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="VXV-rF-Mrk">
+                    <rect key="frame" x="0.0" y="20" width="414" height="110"/>
+                    <color key="backgroundColor" red="0.93725490196078431" green="0.93725490196078431" blue="0.93725490196078431" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="110" id="K1F-df-Set"/>
+                    </constraints>
+                    <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="0.0" id="fd3-ai-Nzj">
+                        <size key="itemSize" width="50" height="50"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="20" minY="0.0" maxX="20" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                </collectionView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ACB-oA-JDc">
+                    <rect key="frame" x="16" y="135" width="382" height="79"/>
+                    <string key="text">Saved - revisit your pinned posts at anytime.
+Moments - capture special moments and share them with your followers. Add more interests and turn them into professional portfolio.
+Click plus (+) button to add/remove  interests.</string>
+                    <fontDescription key="fontDescription" name="Lato-Medium" family="Lato" pointSize="12"/>
+                    <color key="textColor" red="0.70980392156862748" green="0.70980392156862748" blue="0.70980392156862748" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="NHy-gB-Uk7" secondAttribute="trailing" id="FOy-Ox-9xs"/>
+                <constraint firstItem="VXV-rF-Mrk" firstAttribute="leading" secondItem="DIh-qq-1jM" secondAttribute="leading" id="FQj-WM-sKu"/>
+                <constraint firstAttribute="trailing" secondItem="VXV-rF-Mrk" secondAttribute="trailing" id="HRn-7c-Dq3"/>
+                <constraint firstAttribute="bottom" secondItem="ACB-oA-JDc" secondAttribute="bottom" constant="10" id="Hre-hq-bP2"/>
+                <constraint firstItem="NHy-gB-Uk7" firstAttribute="leading" secondItem="DIh-qq-1jM" secondAttribute="leading" id="JFJ-K2-CmS"/>
+                <constraint firstItem="VXV-rF-Mrk" firstAttribute="top" secondItem="DIh-qq-1jM" secondAttribute="top" constant="20" id="VMM-GS-EbC"/>
+                <constraint firstItem="VXV-rF-Mrk" firstAttribute="top" secondItem="NHy-gB-Uk7" secondAttribute="bottom" id="XD8-7U-G75"/>
+                <constraint firstItem="NHy-gB-Uk7" firstAttribute="top" secondItem="DIh-qq-1jM" secondAttribute="top" constant="5" id="Y3s-fR-LJN"/>
+                <constraint firstItem="VXV-rF-Mrk" firstAttribute="leading" secondItem="DIh-qq-1jM" secondAttribute="leading" id="bzA-dM-DJX"/>
+                <constraint firstItem="ACB-oA-JDc" firstAttribute="top" secondItem="VXV-rF-Mrk" secondAttribute="bottom" constant="5" id="dC5-T0-zOX"/>
+                <constraint firstAttribute="trailing" secondItem="VXV-rF-Mrk" secondAttribute="trailing" id="hrR-3k-Hi5"/>
+                <constraint firstAttribute="trailing" secondItem="ACB-oA-JDc" secondAttribute="trailing" constant="16" id="p2R-q7-8A9"/>
+                <constraint firstItem="ACB-oA-JDc" firstAttribute="leading" secondItem="DIh-qq-1jM" secondAttribute="leading" constant="16" id="pCp-a1-qCX"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-42" y="-287"/>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,252 @@
+PODS:
+  - AFNetworking (3.1.0):
+    - AFNetworking/NSURLSession (= 3.1.0)
+    - AFNetworking/Reachability (= 3.1.0)
+    - AFNetworking/Security (= 3.1.0)
+    - AFNetworking/Serialization (= 3.1.0)
+    - AFNetworking/UIKit (= 3.1.0)
+  - AFNetworking/NSURLSession (3.1.0):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (3.1.0)
+  - AFNetworking/Security (3.1.0)
+  - AFNetworking/Serialization (3.1.0)
+  - AFNetworking/UIKit (3.1.0):
+    - AFNetworking/NSURLSession
+  - Alamofire (4.5.1)
+  - AWSCore (2.6.2)
+  - AWSS3 (2.6.2):
+    - AWSCore (= 2.6.2)
+  - Bolts (1.8.4):
+    - Bolts/AppLinks (= 1.8.4)
+    - Bolts/Tasks (= 1.8.4)
+  - Bolts/AppLinks (1.8.4):
+    - Bolts/Tasks
+  - Bolts/Tasks (1.8.4)
+  - Crashlytics (3.8.6):
+    - Fabric (~> 1.6.3)
+  - DZNEmptyDataSet (1.8.1)
+  - ExpandableLabel (0.3.1)
+  - EZLoadingActivity (1.01)
+  - Fabric (1.6.13)
+  - FaceAware (1.2.0)
+  - FacebookCore (0.2.0):
+    - Bolts (~> 1.8)
+    - FBSDKCoreKit (~> 4.15)
+  - FacebookLogin (0.2.0):
+    - Bolts (~> 1.8)
+    - FacebookCore (~> 0.2)
+    - FBSDKCoreKit (~> 4.15)
+    - FBSDKLoginKit (~> 4.15)
+  - FBSDKCoreKit (4.27.0):
+    - Bolts (~> 1.7)
+  - FBSDKLoginKit (4.27.0):
+    - FBSDKCoreKit
+  - Firebase/Analytics (4.2.0):
+    - Firebase/Core
+  - Firebase/Core (4.2.0):
+    - FirebaseAnalytics (= 4.0.3)
+    - FirebaseCore (= 4.0.7)
+  - Firebase/Messaging (4.2.0):
+    - Firebase/Core
+    - FirebaseMessaging (= 2.0.3)
+  - FirebaseAnalytics (4.0.3):
+    - FirebaseCore (~> 4.0)
+    - FirebaseInstanceID (~> 2.0)
+    - GoogleToolboxForMac/NSData+zlib (~> 2.1)
+    - nanopb (~> 0.3)
+  - FirebaseCore (4.0.7):
+    - GoogleToolboxForMac/NSData+zlib (~> 2.1)
+    - nanopb (~> 0.3)
+  - FirebaseInstanceID (2.0.3)
+  - FirebaseMessaging (2.0.3):
+    - FirebaseAnalytics (~> 4.0)
+    - FirebaseCore (~> 4.0)
+    - FirebaseInstanceID (~> 2.0)
+    - GoogleToolboxForMac/Logger (~> 2.1)
+    - Protobuf (~> 3.1)
+  - FLAnimatedImage (1.0.12)
+  - GoogleMaps (2.4.0):
+    - GoogleMaps/Maps (= 2.4.0)
+  - GoogleMaps/Base (2.4.0)
+  - GoogleMaps/Maps (2.4.0):
+    - GoogleMaps/Base
+  - GooglePlacePicker (2.4.0):
+    - GoogleMaps (= 2.4.0)
+    - GooglePlaces (= 2.4.0)
+  - GooglePlaces (2.4.0):
+    - GoogleMaps/Base (= 2.4.0)
+  - GoogleToolboxForMac/Defines (2.1.1)
+  - GoogleToolboxForMac/Logger (2.1.1):
+    - GoogleToolboxForMac/Defines (= 2.1.1)
+  - GoogleToolboxForMac/NSData+zlib (2.1.1):
+    - GoogleToolboxForMac/Defines (= 2.1.1)
+  - GPUImage (0.1.7)
+  - KanvasCameraSDK (1.0.0):
+    - AFNetworking (= 3.1.0)
+    - FLAnimatedImage (= 1.0.12)
+    - GPUImage (= 0.1.7)
+    - SDWebImage (= 4.0.0)
+  - KDCircularProgress (1.5.2)
+  - KILabel (1.0.0)
+  - Kingfisher (3.13.1)
+  - Koloda (4.3):
+    - pop (~> 1.0)
+  - LTMorphingLabel (0.5.3)
+  - MBProgressHUD (1.0.0)
+  - nanopb (0.3.8):
+    - nanopb/decode (= 0.3.8)
+    - nanopb/encode (= 0.3.8)
+  - nanopb/decode (0.3.8)
+  - nanopb/encode (0.3.8)
+  - OnlyPictures (1.1.2)
+  - PhoneNumberKit (2.1.0):
+    - PhoneNumberKit/PhoneNumberKitCore (= 2.1.0)
+    - PhoneNumberKit/UIKit (= 2.1.0)
+  - PhoneNumberKit/PhoneNumberKitCore (2.1.0)
+  - PhoneNumberKit/UIKit (2.1.0):
+    - PhoneNumberKit/PhoneNumberKitCore
+  - pop (1.0.10)
+  - Protobuf (3.4.0)
+  - PRTween (0.0.1)
+  - ReachabilitySwift (3)
+  - Realm (2.10.2):
+    - Realm/Headers (= 2.10.2)
+  - Realm/Headers (2.10.2)
+  - RealmSwift (2.10.2):
+    - Realm (= 2.10.2)
+  - SDWebImage (4.0.0):
+    - SDWebImage/Core (= 4.0.0)
+  - SDWebImage/Core (4.0.0)
+  - SHGWebViewController (4.0.0)
+  - SkeletonView (1.0.3)
+  - Starscream (3.0.1)
+  - SVWebViewController (1.0)
+  - SwiftKeychainWrapper (3.0.1)
+  - SwiftyJSON (3.1.4)
+  - SwiftyTimer (2.0.0)
+  - TOWebViewController (2.2.7):
+    - TOWebViewController/Core (= 2.2.7)
+  - TOWebViewController/Core (2.2.7)
+  - TPKeyboardAvoiding (1.3.1)
+  - TwitterCore (3.0.2)
+  - TwitterKit (3.2.1):
+    - TwitterCore (>= 3.0.2)
+  - UIScrollView-InfiniteScroll (1.0.2)
+  - Vivid (0.9)
+  - Whisper (5.1.0)
+  - YUCIHighPassSkinSmoothing (1.4):
+    - Vivid
+
+DEPENDENCIES:
+  - Alamofire
+  - AWSS3 (~> 2.5)
+  - Crashlytics
+  - DZNEmptyDataSet
+  - ExpandableLabel
+  - EZLoadingActivity
+  - Fabric
+  - FaceAware
+  - FacebookCore
+  - FacebookLogin
+  - Firebase/Analytics
+  - Firebase/Core
+  - Firebase/Messaging
+  - GoogleMaps
+  - GooglePlacePicker
+  - GooglePlaces
+  - KanvasCameraSDK (from `havr/Cocoapod/Universal`)
+  - KDCircularProgress
+  - KILabel (= 1.0.0)
+  - Kingfisher (~> 3)
+  - Koloda (~> 4.0)
+  - LTMorphingLabel (= 0.5.3)
+  - MBProgressHUD
+  - OnlyPictures
+  - PhoneNumberKit (~> 2.1)
+  - PRTween (~> 0.0.1)
+  - ReachabilitySwift (~> 3)
+  - RealmSwift
+  - SHGWebViewController (~> 4.0.0)
+  - SkeletonView
+  - Starscream
+  - SVWebViewController
+  - SwiftKeychainWrapper
+  - SwiftyJSON
+  - SwiftyTimer
+  - TOWebViewController
+  - TPKeyboardAvoiding
+  - TwitterKit
+  - UIScrollView-InfiniteScroll
+  - Vivid
+  - Whisper (= 5.1.0)
+  - YUCIHighPassSkinSmoothing
+
+EXTERNAL SOURCES:
+  KanvasCameraSDK:
+    :path: havr/Cocoapod/Universal
+
+SPEC CHECKSUMS:
+  AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
+  Alamofire: 2d95912bf4c34f164fdfc335872e8c312acaea4a
+  AWSCore: 8f458961a4967be219162108f5be7df1c935639a
+  AWSS3: b3e2c4aca868cae06b5b88337ceabee25709fcc5
+  Bolts: 8a7995239dbe724f9cba2248b766d48b7ebdd322
+  Crashlytics: 95d05f4e4c19a771250c4bd9ce344d996de32bbf
+  DZNEmptyDataSet: 9525833b9e68ac21c30253e1d3d7076cc828eaa7
+  ExpandableLabel: a622f4ffb99d6a0bc36bd180ef7209540dc1b88e
+  EZLoadingActivity: edd7e387e5197b116ce2cccb3fd747ababc2a510
+  Fabric: 2fb5676bc811af011a04513451f463dac6803206
+  FaceAware: 421436f9d16aacdb26ffcf8e5a39a1dd68630395
+  FacebookCore: 2cb3f0fbff218e9d3119cec84bae983b232412de
+  FacebookLogin: c9d606504735780a9e3002465a615512e0a691a5
+  FBSDKCoreKit: ebc6c5f5b3f0e72396041050e2266781a38ac587
+  FBSDKLoginKit: 887be4b7452e1c5a3cc4485ce152529965a0c41e
+  Firebase: 9548cae14d69718add12d75a5b312893f7ef89c7
+  FirebaseAnalytics: 76f754d37ca5b04f36856729b6af3ca0152d1069
+  FirebaseCore: 9a6cc1e3eaf75905390f9220596ad4fd8f92faee
+  FirebaseInstanceID: a4fc702b5a026f7322964376047f1a3f1f7cc6ff
+  FirebaseMessaging: eaf1bfff0193170c04ea3ba3bfe983f68f893118
+  FLAnimatedImage: 4a0b56255d9b05f18b6dd7ee06871be5d3b89e31
+  GoogleMaps: 8436ab5d1c25e36915b2f7416d0c8e3fa2e76c61
+  GooglePlacePicker: 755f10343d71280c7b016823e73fbae9625dfa8a
+  GooglePlaces: aafe5990fa7951e98e078761bbdaaf236d7e0c65
+  GoogleToolboxForMac: 8e329f1b599f2512c6b10676d45736bcc2cbbeb0
+  GPUImage: 733a5f0fab92df9de1c37ba9df520a833ccb406d
+  KanvasCameraSDK: 543110fcf665c769fea1e99a50157c4e50b9950d
+  KDCircularProgress: 12f677b2deb02409ab48c6cae1898d146b8ad549
+  KILabel: 84049969642d4ac1061ebe38ad4c0da37fed108b
+  Kingfisher: ed9707a409cc47fddafbcd12a43a9757e3600af5
+  Koloda: 3431257c45be8d693582a9c61bb9fd1d07d5799b
+  LTMorphingLabel: b85b6c1c5d0c4203e22f8d3dca722546f67b8410
+  MBProgressHUD: 4890f671c94e8a0f3cf959aa731e9de2f036d71a
+  nanopb: 5601e6bca2dbf1ed831b519092ec110f66982ca3
+  OnlyPictures: c819b67e20f45493d49f38f4de5e630b7e8cbae0
+  PhoneNumberKit: 62003f40ff75315fd3738286558bc365365ac222
+  pop: 82ca6b068ce9278fd350fd9dd09482a0ce9492e6
+  Protobuf: 03eef2ee0b674770735cf79d9c4d3659cf6908e8
+  PRTween: b5f4a594f65f4198eb68e2ef3cf72f3390f037b8
+  ReachabilitySwift: f5b9bb30a0777fac8f09ce8b067e32faeb29bb64
+  Realm: 0ef72b837fb67e9f4b098bac771ddd72c7fdbb69
+  RealmSwift: 07a9ae0505091eda6b2ee7c190c3786d6e90a7b0
+  SDWebImage: 76a6348bdc74eb5a55dd08a091ef298e56b55e41
+  SHGWebViewController: 613dff4b64d59d2ab56f009f96126f12465273d5
+  SkeletonView: b8232afe7a9775542636966a99c8d84e045a735b
+  Starscream: 6608f27f8f00f585ee69d18bfd3aa9353ff9fa6c
+  SVWebViewController: c36dda7326e81fcae0abf5d02bf7bbf7e41be901
+  SwiftKeychainWrapper: 38952a3636320ae61bad3513cadd870929de7a4a
+  SwiftyJSON: c2842d878f95482ffceec5709abc3d05680c0220
+  SwiftyTimer: 2efd74b060d69ad4f1496baf5bbedbe132125fcf
+  TOWebViewController: 5c17cc65312df4d596229e524ce1d0b3bcba5dd0
+  TPKeyboardAvoiding: 0d6af20e95e2850f4c621841225b59ec7d8dd852
+  TwitterCore: e0420b01e02e7d20e94690e37f43e75de219ab8d
+  TwitterKit: 205ac89824bbfe9e85a16c420d30bb7bcbedac45
+  UIScrollView-InfiniteScroll: c132d6d5851daff229ab4a1060ccf70a05a051c9
+  Vivid: 0fde7409beac71224deb151dd78f98a5bb860497
+  Whisper: 62e406a71a288476e605a4db06de8c6975bbb350
+  YUCIHighPassSkinSmoothing: 8418fd1bf605ec22b647c57745b863b352f72097
+
+PODFILE CHECKSUM: 8bc6f26a1a0c826c77260a3b661987de275cf96e
+
+COCOAPODS: 1.3.1

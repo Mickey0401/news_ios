@@ -1,0 +1,93 @@
+{
+    "baseurl": "https://d1d7t1ygvx8siu.cloudfront.net/SDK-Assets/",
+    "stamps" : [
+                {
+                "foldername" : "stamps.words3",
+                "count" : 24
+                },
+                {
+                "foldername" : "stamps.words2",
+                "count" : 24
+                },
+                {
+                "foldername": "stamps.rabtuscucumber",
+                "count": 24
+                },
+                {
+                "foldername": "stamps.kurikinton",
+                "count": 40
+                },
+                {
+                "foldername" : "stamps.words",
+                "count" : 16
+                },
+                {
+                "foldername": "stamps.animals",
+                "count": 15
+                },
+                {
+                "foldername": "stamps.mustaches",
+                "count": 17
+                },
+                {
+                "foldername": "stamps.headwear",
+                "count": 16
+                },
+                {
+                "foldername": "stamps.headwear2",
+                "count": 16
+                },
+                {
+                "foldername" : "stamps.smiles",
+                "count" : 16
+                },
+                {
+                "foldername" : "stamps.love",
+                "count" : 16
+                }
+                ],
+    "overlays" : [
+                  {
+                  "foldername" : "overlays.phrases",
+                  "count" : 28
+                  },
+                  {
+                  "foldername" : "overlays.inspiration",
+                  "count" : 28
+                  },
+                  {
+                  "foldername" : "overlays.sayings",
+                  "count" : 24
+                  },
+                  {
+                  "foldername" : "overlays.ornaments",
+                  "count" : 24
+                  },
+                  {
+                  "foldername" : "overlays.doodles",
+                  "count" : 24
+                  },
+                  {
+                  "foldername" : "overlays.banners",
+                  "count" : 24
+                  },
+                  {
+                  "foldername" : "overlays.bubbles",
+                  "count" : 28
+                  },
+                  {
+                  "foldername" : "overlays.lines",
+                  "count" : 36
+                  },
+                  {
+                  "foldername" : "overlays.shapes",
+                  "count" : 32
+                  }
+                  ],
+    "borders": [
+                {
+                "foldername" : "borders.basic",
+                "count" : 16
+                }
+                ]
+}

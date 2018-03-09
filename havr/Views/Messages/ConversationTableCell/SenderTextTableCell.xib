@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="PTS55F.ttf">
+            <string>PTSans-Regular</string>
+        </array>
+        <array key="Roboto-Regular.ttf">
+            <string>Roboto-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SenderTextTableCell" rowHeight="106" id="KGk-i7-Jjw" customClass="ConversationTableCell" customModule="havr" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="387" height="106"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="387" height="105.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WuY-CW-YKG" userLabel="MessageView" customClass="CornerSpecView" customModule="havr" customModuleProvider="target">
+                        <rect key="frame" x="277" y="0.0" width="100" height="102.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0lB-cJ-mcR" customClass="SRCopyableLabel" customModule="havr" customModuleProvider="target">
+                                <rect key="frame" x="8" y="8" width="84" height="20"/>
+                                <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="15"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nFK-aX-jBt">
+                                <rect key="frame" x="66.5" y="84.5" width="23.5" height="13"/>
+                                <fontDescription key="fontDescription" name="PTSans-Regular" family="PT Sans" pointSize="10"/>
+                                <color key="textColor" red="0.54780238069999998" green="0.55584352940000004" blue="0.57996697529999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="M delivered" translatesAutoresizingMaskIntoConstraints="NO" id="dIF-kh-2vH">
+                                <rect key="frame" x="51.5" y="86" width="10" height="10"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.90588235289999997" green="0.99607843139999996" blue="0.82352941180000006" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="dIF-kh-2vH" firstAttribute="centerY" secondItem="nFK-aX-jBt" secondAttribute="centerY" id="1TS-s9-wY7"/>
+                            <constraint firstItem="0lB-cJ-mcR" firstAttribute="top" secondItem="WuY-CW-YKG" secondAttribute="top" constant="8" id="1WT-FC-DFV"/>
+                            <constraint firstAttribute="trailing" secondItem="0lB-cJ-mcR" secondAttribute="trailing" constant="8" id="1zJ-41-GrV"/>
+                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="3ZD-gS-mKy"/>
+                            <constraint firstItem="0lB-cJ-mcR" firstAttribute="leading" secondItem="WuY-CW-YKG" secondAttribute="leading" constant="8" id="Pce-MJ-QJh"/>
+                            <constraint firstAttribute="trailing" secondItem="nFK-aX-jBt" secondAttribute="trailing" constant="10" id="fbz-9m-9al"/>
+                            <constraint firstAttribute="bottom" secondItem="nFK-aX-jBt" secondAttribute="bottom" constant="5" id="jdS-9F-8NF"/>
+                            <constraint firstItem="nFK-aX-jBt" firstAttribute="leading" secondItem="dIF-kh-2vH" secondAttribute="trailing" constant="5" id="qNC-U0-n7U"/>
+                            <constraint firstItem="nFK-aX-jBt" firstAttribute="top" relation="greaterThanOrEqual" secondItem="0lB-cJ-mcR" secondAttribute="bottom" constant="4" id="tp7-6S-UOu"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="7"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                <color key="value" red="0.81568627449999997" green="0.81568627449999997" blue="0.81568627449999997" alpha="1" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                                <size key="value" width="0.0" height="1"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0xh-On-qLT">
+                        <rect key="frame" x="242" y="36.5" width="30" height="30"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="JZs-hk-R6b"/>
+                            <constraint firstAttribute="width" constant="30" id="KY5-5A-kEO"/>
+                        </constraints>
+                        <state key="normal" image="M retry icon"/>
+                        <connections>
+                            <action selector="retryButtonClicked:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="IWV-zZ-6PO"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="WuY-CW-YKG" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="75" id="8Cp-dS-bMn"/>
+                    <constraint firstAttribute="trailing" secondItem="WuY-CW-YKG" secondAttribute="trailing" constant="10" id="DwO-kM-vVq"/>
+                    <constraint firstItem="WuY-CW-YKG" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="Rug-JA-t03"/>
+                    <constraint firstItem="WuY-CW-YKG" firstAttribute="leading" secondItem="0xh-On-qLT" secondAttribute="trailing" constant="5" id="cqC-A1-s0a"/>
+                    <constraint firstAttribute="bottom" secondItem="WuY-CW-YKG" secondAttribute="bottom" constant="3" id="eye-On-vCV"/>
+                    <constraint firstItem="0xh-On-qLT" firstAttribute="centerY" secondItem="WuY-CW-YKG" secondAttribute="centerY" id="liP-Tv-E2L"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <connections>
+                <outlet property="messageLabel" destination="0lB-cJ-mcR" id="6F3-qg-ezX"/>
+                <outlet property="retryButton" destination="0xh-On-qLT" id="iAJ-aB-Fu6"/>
+                <outlet property="rightImageView" destination="dIF-kh-2vH" id="UpT-vc-SDS"/>
+                <outlet property="shadowView" destination="WuY-CW-YKG" id="MyF-bJ-M1p"/>
+                <outlet property="timeLabel" destination="nFK-aX-jBt" id="sIX-mI-Zbv"/>
+            </connections>
+            <point key="canvasLocation" x="166.5" y="297"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="M delivered" width="10" height="10"/>
+        <image name="M retry icon" width="30" height="30"/>
+    </resources>
+</document>

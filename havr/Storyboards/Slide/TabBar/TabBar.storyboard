@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="7zT-9p-NXf">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="RUD-YW-pFH">
+            <objects>
+                <navigationController navigationBarHidden="YES" id="7zT-9p-NXf" sceneMemberID="viewController">
+                    <nil key="simulatedTopBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="8cp-lv-cW0">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.98431372549999996" green="0.98039215690000003" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="J7W-LS-e6j" kind="relationship" relationship="rootViewController" id="7jF-zy-6Sc"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Xdb-UH-Bfo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3838" y="-82"/>
+        </scene>
+        <!--SlideExplore-->
+        <scene sceneID="I9p-on-kmB">
+            <objects>
+                <viewControllerPlaceholder storyboardName="SlideExplore" id="cc7-xQ-KmT" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="t5r-2H-Q5A"/>
+                    <navigationItem key="navigationItem" id="dO2-O4-XLc"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YFU-c4-1xf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1085" y="582"/>
+        </scene>
+        <!--Messages-->
+        <scene sceneID="LNX-LX-KyD">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Messages" id="FAT-FN-Ql0" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="UqK-cZ-Nzn"/>
+                    <navigationItem key="navigationItem" id="e9G-zs-wPo"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1PC-Ws-swb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1084" y="1401"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="rDC-ZB-LAc">
+            <objects>
+                <navigationController id="Ogu-UE-AYL" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="" image="tab_chats" selectedImage="sel_tab_chats" id="Hss-Hw-oFi">
+                        <inset key="imageInsets" minX="0.0" minY="6" maxX="0.0" maxY="-6"/>
+                    </tabBarItem>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="3cP-uE-5hw">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" red="0.98431372549999996" green="0.98039215690000003" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="barTintColor" red="0.98431372549999996" green="0.98039215690000003" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="FAT-FN-Ql0" kind="relationship" relationship="rootViewController" id="50Z-i9-jYL"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ido-ph-tvM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1847" y="1435"/>
+        </scene>
+        <!--Broadcast-->
+        <scene sceneID="sto-51-0Ee">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Broadcast" id="nVT-r5-EBF" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="nDv-rq-6t7"/>
+                    <navigationItem key="navigationItem" id="Kzg-ge-aH6"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VNQ-TG-pao" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1043" y="-1744"/>
+        </scene>
+        <!--Search-->
+        <scene sceneID="w4M-ok-T9g">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Search" id="vmS-Gt-dzc" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="Ne4-HA-xw3"/>
+                    <navigationItem key="navigationItem" id="uDE-cq-QIh"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZAd-R3-mnO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1058" y="-961"/>
+        </scene>
+        <!--Camera-->
+        <scene sceneID="mxQ-eq-hU7">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Camera" id="6Se-sh-lu1" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="1WG-df-dDy"/>
+                    <navigationItem key="navigationItem" id="oGe-My-aF7"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="snu-7P-wUn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1058" y="-84"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="Crs-gX-hCM">
+            <objects>
+                <tabBarController id="J7W-LS-e6j" customClass="TabBarController" customModule="havr" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="DG8-mU-PaI">
+                        <barButtonItem key="leftBarButtonItem" title="Hello" id="HjJ-Mp-XbN"/>
+                    </navigationItem>
+                    <tabBar key="tabBar" contentMode="scaleToFill" translucent="NO" id="QAl-FT-lCE">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" red="0.98039215686274506" green="0.98431372549019602" blue="0.98039215686274506" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="barTintColor" red="0.97254901960784312" green="0.97254901960784312" blue="0.97254901960784312" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="selectedImageTintColor" red="0.27450980392156865" green="0.27450980392156865" blue="0.27450980392156865" alpha="1" colorSpace="calibratedRGB"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="NSM-r0-NWz" kind="relationship" relationship="viewControllers" id="FOh-t0-41k"/>
+                        <segue destination="Hp1-us-hid" kind="relationship" relationship="viewControllers" id="Jrc-ku-Vuy"/>
+                        <segue destination="Qd7-Hp-DTF" kind="relationship" relationship="viewControllers" id="0g6-ld-wAC"/>
+                        <segue destination="gKK-J7-wDA" kind="relationship" relationship="viewControllers" id="dLP-Wd-2d2"/>
+                        <segue destination="Ogu-UE-AYL" kind="relationship" relationship="viewControllers" id="9KP-c7-unp"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1Mg-7y-kcp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2911" y="-83"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="QBr-Fx-QZk">
+            <objects>
+                <navigationController id="gKK-J7-wDA" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="" image="tab_maps" selectedImage="sel_tab_maps" id="exU-zP-bAX">
+                        <inset key="imageInsets" minX="0.0" minY="6" maxX="0.0" maxY="-6"/>
+                    </tabBarItem>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="KMd-Ce-wb8">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.98431372549999996" green="0.98039215690000003" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="cc7-xQ-KmT" kind="relationship" relationship="rootViewController" id="EgS-b4-CNu"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KHm-Xg-8zu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1847" y="621"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="KzG-Sb-jKD">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Qd7-Hp-DTF" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="" image="tab_photo" selectedImage="sel_tab_photo" id="c4u-2e-7if">
+                        <inset key="imageInsets" minX="0.0" minY="6" maxX="0.0" maxY="-6"/>
+                    </tabBarItem>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="S0y-Zc-QeZ">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.98431372549999996" green="0.98039215690000003" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="6Se-sh-lu1" kind="relationship" relationship="rootViewController" id="e7l-yr-mfq"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ror-cu-whp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1847" y="-83"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="usN-zJ-MnQ">
+            <objects>
+                <navigationController id="Hp1-us-hid" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="" image="tab_search" selectedImage="sel_tab_search" id="mAe-V0-3bW">
+                        <inset key="imageInsets" minX="0.0" minY="6" maxX="0.0" maxY="-6"/>
+                    </tabBarItem>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="i5M-tx-r7f">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.98431372549999996" green="0.98039215690000003" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="vmS-Gt-dzc" kind="relationship" relationship="rootViewController" id="nb5-BL-3iq"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oGn-FU-xjG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1847" y="-960"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="SKU-Ia-0AJ">
+            <objects>
+                <navigationController id="NSM-r0-NWz" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="" image="tab_home" selectedImage="sel_tab_home" id="dSa-pV-eUO">
+                        <inset key="imageInsets" minX="0.0" minY="6" maxX="0.0" maxY="-6"/>
+                    </tabBarItem>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="ucg-BX-Yhz">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.98431372549999996" green="0.98039215690000003" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="nVT-r5-EBF" kind="relationship" relationship="rootViewController" id="5Dw-Zn-eqp"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BvG-GQ-3kS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1847" y="-1743"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="sel_tab_chats" width="24" height="24"/>
+        <image name="sel_tab_home" width="22" height="22"/>
+        <image name="sel_tab_maps" width="25" height="24"/>
+        <image name="sel_tab_photo" width="24" height="21"/>
+        <image name="sel_tab_search" width="23" height="23"/>
+        <image name="tab_chats" width="24" height="24"/>
+        <image name="tab_home" width="22" height="22"/>
+        <image name="tab_maps" width="25" height="24"/>
+        <image name="tab_photo" width="24" height="21"/>
+        <image name="tab_search" width="23" height="23"/>
+    </resources>
+</document>

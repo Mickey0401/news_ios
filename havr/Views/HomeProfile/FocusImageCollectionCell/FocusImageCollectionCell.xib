@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="FocusImageCollectionCell" id="gTV-IL-0wX" customClass="FocusImageCollectionCell" customModule="havr" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="110" height="110"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="110" height="110"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OAo-47-aiq">
+                        <rect key="frame" x="0.0" y="0.0" width="110" height="110"/>
+                        <color key="backgroundColor" red="0.8980392157" green="0.8980392157" blue="0.8980392157" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="hFD-BO-cr1">
+                        <rect key="frame" x="0.0" y="0.0" width="110" height="110"/>
+                    </imageView>
+                    <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="B video icon" translatesAutoresizingMaskIntoConstraints="NO" id="iSh-5d-vqV">
+                        <rect key="frame" x="10" y="8" width="24" height="17"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="24" id="N3q-RF-4ne"/>
+                            <constraint firstAttribute="width" secondItem="iSh-5d-vqV" secondAttribute="height" multiplier="17:12" id="lx6-OI-Kt0"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="hFD-BO-cr1" secondAttribute="trailing" id="HwU-OZ-80w"/>
+                <constraint firstAttribute="bottom" secondItem="hFD-BO-cr1" secondAttribute="bottom" id="ImS-D4-uFg"/>
+                <constraint firstItem="OAo-47-aiq" firstAttribute="centerX" secondItem="hFD-BO-cr1" secondAttribute="centerX" id="ZVw-Ni-zsC"/>
+                <constraint firstItem="iSh-5d-vqV" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="10" id="g0v-hC-Rdc"/>
+                <constraint firstItem="hFD-BO-cr1" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="h4S-HQ-kle"/>
+                <constraint firstItem="iSh-5d-vqV" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="8" id="ijH-oU-EJt"/>
+                <constraint firstItem="hFD-BO-cr1" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="mC4-o3-6MC"/>
+                <constraint firstItem="OAo-47-aiq" firstAttribute="width" secondItem="hFD-BO-cr1" secondAttribute="width" id="rHo-82-8hE"/>
+                <constraint firstItem="OAo-47-aiq" firstAttribute="centerY" secondItem="hFD-BO-cr1" secondAttribute="centerY" id="rKx-fN-blh"/>
+                <constraint firstItem="OAo-47-aiq" firstAttribute="height" secondItem="hFD-BO-cr1" secondAttribute="height" id="ulx-Er-Vix"/>
+            </constraints>
+            <size key="customSize" width="113" height="110"/>
+            <connections>
+                <outlet property="productHomeImageView" destination="hFD-BO-cr1" id="aME-p1-f1u"/>
+                <outlet property="videoImageIcon" destination="iSh-5d-vqV" id="t5D-Hv-BXJ"/>
+            </connections>
+            <point key="canvasLocation" x="56" y="82"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="B video icon" width="34" height="24"/>
+    </resources>
+</document>

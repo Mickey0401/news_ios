@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="PTS55F.ttf">
+            <string>PTSans-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ReceiverVoiceTableCell" rowHeight="67" id="J3Y-nb-ddj" customClass="VoiceTableCell" customModule="havr" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="69"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="J3Y-nb-ddj" id="YPX-ak-7lM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="68.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="b3K-gj-da7" userLabel="MessageView">
+                        <rect key="frame" x="10" y="0.0" width="170" height="63.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="11:00 PM" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HOQ-E1-d0E">
+                                <rect key="frame" x="108" y="42.5" width="52" height="14"/>
+                                <fontDescription key="fontDescription" name="PTSans-Regular" family="PT Sans" pointSize="12"/>
+                                <color key="textColor" red="0.54780238069999998" green="0.55584352940000004" blue="0.57996697529999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="arc-5s-bDO">
+                                <rect key="frame" x="10" y="10" width="26" height="26"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="26" id="4rQ-wy-20k"/>
+                                    <constraint firstAttribute="height" constant="26" id="EkR-8t-akJ"/>
+                                </constraints>
+                                <state key="normal" image="recordPlay icon"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="13"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="playButtonClicked:" destination="J3Y-nb-ddj" eventType="touchUpInside" id="8Uh-Ei-PIo"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0HS-TY-Ja8">
+                                <rect key="frame" x="41" y="5" width="123" height="25"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IdD-I3-pQo">
+                                        <rect key="frame" x="0.0" y="0.0" width="123" height="25"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="IdD-I3-pQo" secondAttribute="bottom" id="5aR-Sh-kKk"/>
+                                    <constraint firstItem="IdD-I3-pQo" firstAttribute="top" secondItem="0HS-TY-Ja8" secondAttribute="top" id="hFL-Ll-iJ0"/>
+                                    <constraint firstItem="IdD-I3-pQo" firstAttribute="leading" secondItem="0HS-TY-Ja8" secondAttribute="leading" id="kwq-p8-xG9"/>
+                                    <constraint firstAttribute="height" constant="25" id="owu-M7-B39"/>
+                                    <constraint firstAttribute="trailing" secondItem="IdD-I3-pQo" secondAttribute="trailing" id="xC4-jn-ZUE"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3:00" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1oX-6g-huu">
+                                <rect key="frame" x="11" y="43" width="23.5" height="13.5"/>
+                                <fontDescription key="fontDescription" name="PTSans-Regular" family="PT Sans" pointSize="12"/>
+                                <color key="textColor" red="0.54780238069999998" green="0.55584352940000004" blue="0.57996697529999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="x1Z-l1-GWd">
+                                <rect key="frame" x="10" y="10" width="26" height="26"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="HOQ-E1-d0E" secondAttribute="trailing" constant="10" id="0pb-3T-ZTl"/>
+                            <constraint firstItem="x1Z-l1-GWd" firstAttribute="centerX" secondItem="arc-5s-bDO" secondAttribute="centerX" id="2Eb-7L-DMl"/>
+                            <constraint firstItem="0HS-TY-Ja8" firstAttribute="top" secondItem="b3K-gj-da7" secondAttribute="top" constant="5" id="3Cu-zp-3ft"/>
+                            <constraint firstItem="x1Z-l1-GWd" firstAttribute="centerY" secondItem="arc-5s-bDO" secondAttribute="centerY" id="4jC-cW-LVC"/>
+                            <constraint firstItem="x1Z-l1-GWd" firstAttribute="height" secondItem="arc-5s-bDO" secondAttribute="height" id="4v2-lY-HGG"/>
+                            <constraint firstItem="x1Z-l1-GWd" firstAttribute="width" secondItem="arc-5s-bDO" secondAttribute="width" id="51V-ga-nTZ"/>
+                            <constraint firstAttribute="bottom" secondItem="HOQ-E1-d0E" secondAttribute="bottom" constant="7" id="5lg-5h-iUc"/>
+                            <constraint firstItem="1oX-6g-huu" firstAttribute="centerX" secondItem="arc-5s-bDO" secondAttribute="centerX" id="8Ca-zD-fP2"/>
+                            <constraint firstAttribute="width" constant="170" id="K1v-4w-D3v"/>
+                            <constraint firstItem="1oX-6g-huu" firstAttribute="top" secondItem="arc-5s-bDO" secondAttribute="bottom" constant="7" id="KNK-VA-7da"/>
+                            <constraint firstItem="0HS-TY-Ja8" firstAttribute="leading" secondItem="arc-5s-bDO" secondAttribute="trailing" constant="5" id="WiA-Aa-F9e"/>
+                            <constraint firstItem="arc-5s-bDO" firstAttribute="top" secondItem="b3K-gj-da7" secondAttribute="top" constant="10" id="ceQ-jv-OCe"/>
+                            <constraint firstAttribute="trailing" secondItem="0HS-TY-Ja8" secondAttribute="trailing" constant="6" id="enS-8E-56g"/>
+                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="170" id="gcC-S9-Wce"/>
+                            <constraint firstAttribute="bottom" secondItem="1oX-6g-huu" secondAttribute="bottom" constant="7" id="rBC-Or-VkW"/>
+                            <constraint firstItem="arc-5s-bDO" firstAttribute="leading" secondItem="b3K-gj-da7" secondAttribute="leading" constant="10" id="uka-QU-xsM"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="7"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                <color key="value" red="0.81568627449999997" green="0.81568627449999997" blue="0.81568627449999997" alpha="1" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                <real key="value" value="4"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                                <size key="value" width="0.0" height="1"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                <constraints>
+                    <constraint firstItem="b3K-gj-da7" firstAttribute="leading" secondItem="YPX-ak-7lM" secondAttribute="leading" constant="10" id="eaz-tC-5jq"/>
+                    <constraint firstItem="b3K-gj-da7" firstAttribute="top" secondItem="YPX-ak-7lM" secondAttribute="top" id="g7w-Eh-wXl"/>
+                    <constraint firstAttribute="bottom" secondItem="b3K-gj-da7" secondAttribute="bottom" constant="5" id="qkU-Mc-aAt"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <connections>
+                <outlet property="durationLabel" destination="1oX-6g-huu" id="0w2-Jl-dFj"/>
+                <outlet property="loadingActivityIndicator" destination="x1Z-l1-GWd" id="MvP-cP-HuV"/>
+                <outlet property="playButton" destination="arc-5s-bDO" id="Hjy-DA-ade"/>
+                <outlet property="shadowView" destination="b3K-gj-da7" id="AYt-Ho-9xe"/>
+                <outlet property="timeLabel" destination="HOQ-E1-d0E" id="mL2-1n-30x"/>
+                <outlet property="waveView" destination="IdD-I3-pQo" id="5Cv-jO-3DJ"/>
+            </connections>
+            <point key="canvasLocation" x="55" y="-34"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="recordPlay icon" width="25" height="25"/>
+    </resources>
+</document>

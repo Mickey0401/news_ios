@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="InterestView" customModule="havr" customModuleProvider="target">
+            <connections>
+                <outlet property="interestCollection" destination="pQi-Mg-h9P" id="GPe-5T-dUa"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" restorationIdentifier="InterestView" id="n5G-6r-EDH">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="120"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZBd-C0-XGV">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="120"/>
+                    <subviews>
+                        <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" alwaysBounceHorizontal="YES" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="pQi-Mg-h9P">
+                            <rect key="frame" x="0.0" y="10" width="414" height="110"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="0.0" id="ieq-4H-e9F">
+                                <size key="itemSize" width="50" height="50"/>
+                                <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                <size key="footerReferenceSize" width="50" height="50"/>
+                                <inset key="sectionInset" minX="20" minY="0.0" maxX="20" maxY="0.0"/>
+                            </collectionViewFlowLayout>
+                            <cells/>
+                            <collectionReusableView key="sectionFooterView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="zWw-lP-qlF">
+                                <rect key="frame" x="40" y="0.0" width="50" height="110"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </collectionReusableView>
+                        </collectionView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="120" id="7fh-fk-vQJ"/>
+                        <constraint firstAttribute="trailing" secondItem="pQi-Mg-h9P" secondAttribute="trailing" id="GmR-sS-v8R"/>
+                        <constraint firstAttribute="bottom" secondItem="pQi-Mg-h9P" secondAttribute="bottom" id="jBg-sC-3TY"/>
+                        <constraint firstItem="pQi-Mg-h9P" firstAttribute="leading" secondItem="ZBd-C0-XGV" secondAttribute="leading" id="wKN-D6-Vx0"/>
+                        <constraint firstItem="pQi-Mg-h9P" firstAttribute="top" secondItem="ZBd-C0-XGV" secondAttribute="top" constant="10" id="zd8-Ob-t1M"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.93725490196078431" green="0.93725490196078431" blue="0.95686274509803915" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="ZBd-C0-XGV" secondAttribute="trailing" id="9NT-aS-I3T"/>
+                <constraint firstItem="ZBd-C0-XGV" firstAttribute="top" secondItem="n5G-6r-EDH" secondAttribute="top" id="Uvu-4h-i6V"/>
+                <constraint firstItem="ZBd-C0-XGV" firstAttribute="leading" secondItem="n5G-6r-EDH" secondAttribute="leading" id="hjN-eX-HzM"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="59" y="83"/>
+        </view>
+    </objects>
+</document>

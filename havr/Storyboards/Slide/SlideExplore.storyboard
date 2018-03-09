@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="cnK-jG-OX0">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Slide Explore Controller-->
+        <scene sceneID="FjL-NB-3yR">
+            <objects>
+                <viewController storyboardIdentifier="SlideExploreController" extendedLayoutIncludesOpaqueBars="YES" id="cnK-jG-OX0" customClass="SlideExploreController" customModule="havr" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="T6a-fR-1Ad"/>
+                        <viewControllerLayoutGuide type="bottom" id="uac-fz-An8"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="CW2-bc-BAe">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jrs-o4-aBB">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gfu-fC-N0u">
+                                        <rect key="frame" x="0.0" y="0.0" width="750" height="667"/>
+                                        <subviews>
+                                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FsT-mN-Eq0" userLabel="Left Container View">
+                                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                                <connections>
+                                                    <segue destination="RNo-b4-AuJ" kind="embed" id="UAz-wV-gnZ"/>
+                                                </connections>
+                                            </containerView>
+                                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="djF-Jx-E3q" userLabel="Right Container View">
+                                                <rect key="frame" x="375" y="0.0" width="375" height="667"/>
+                                                <connections>
+                                                    <segue destination="MFm-B5-5ea" kind="embed" id="E3L-Hw-mS3"/>
+                                                </connections>
+                                            </containerView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="djF-Jx-E3q" secondAttribute="trailing" id="6ku-Z5-3Uo"/>
+                                            <constraint firstItem="djF-Jx-E3q" firstAttribute="leading" secondItem="FsT-mN-Eq0" secondAttribute="trailing" id="9fQ-NQ-N8m"/>
+                                            <constraint firstItem="FsT-mN-Eq0" firstAttribute="top" secondItem="gfu-fC-N0u" secondAttribute="top" id="HKz-1W-dHz"/>
+                                            <constraint firstAttribute="bottom" secondItem="FsT-mN-Eq0" secondAttribute="bottom" id="SDJ-D0-4LG"/>
+                                            <constraint firstItem="djF-Jx-E3q" firstAttribute="top" secondItem="gfu-fC-N0u" secondAttribute="top" id="lRD-22-zRZ"/>
+                                            <constraint firstItem="FsT-mN-Eq0" firstAttribute="leading" secondItem="gfu-fC-N0u" secondAttribute="leading" id="sNd-A6-2CO"/>
+                                            <constraint firstAttribute="bottom" secondItem="djF-Jx-E3q" secondAttribute="bottom" id="yWh-iG-Vz9"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="gfu-fC-N0u" firstAttribute="height" secondItem="Jrs-o4-aBB" secondAttribute="height" id="4Yd-Op-CXH"/>
+                                    <constraint firstItem="FsT-mN-Eq0" firstAttribute="height" secondItem="Jrs-o4-aBB" secondAttribute="height" id="8rY-wu-rxd"/>
+                                    <constraint firstAttribute="trailing" secondItem="gfu-fC-N0u" secondAttribute="trailing" id="HMU-0U-jZZ"/>
+                                    <constraint firstAttribute="bottom" secondItem="gfu-fC-N0u" secondAttribute="bottom" id="J2T-hw-haX"/>
+                                    <constraint firstItem="gfu-fC-N0u" firstAttribute="leading" secondItem="Jrs-o4-aBB" secondAttribute="leading" id="Rt4-qz-tmg"/>
+                                    <constraint firstItem="djF-Jx-E3q" firstAttribute="height" secondItem="Jrs-o4-aBB" secondAttribute="height" id="Uo8-EU-Ae6"/>
+                                    <constraint firstItem="gfu-fC-N0u" firstAttribute="top" secondItem="Jrs-o4-aBB" secondAttribute="top" id="bYC-Ke-2vu"/>
+                                    <constraint firstItem="djF-Jx-E3q" firstAttribute="width" secondItem="Jrs-o4-aBB" secondAttribute="width" id="pOm-Wn-kqp"/>
+                                    <constraint firstItem="FsT-mN-Eq0" firstAttribute="width" secondItem="Jrs-o4-aBB" secondAttribute="width" id="snI-xa-r4M"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="delegate" destination="cnK-jG-OX0" id="3j8-Oi-tvg"/>
+                                </connections>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="uac-fz-An8" firstAttribute="top" secondItem="Jrs-o4-aBB" secondAttribute="bottom" id="NQv-RO-odJ"/>
+                            <constraint firstItem="Jrs-o4-aBB" firstAttribute="top" secondItem="CW2-bc-BAe" secondAttribute="top" id="b8s-IU-YOD"/>
+                            <constraint firstItem="Jrs-o4-aBB" firstAttribute="leading" secondItem="CW2-bc-BAe" secondAttribute="leading" id="byk-LI-wYK"/>
+                            <constraint firstAttribute="trailing" secondItem="Jrs-o4-aBB" secondAttribute="trailing" id="gjT-KL-UPb"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Agw-Va-ywF"/>
+                    <connections>
+                        <outlet property="leftContainer" destination="FsT-mN-Eq0" id="KYy-MH-EPg"/>
+                        <outlet property="rightContainer" destination="djF-Jx-E3q" id="BO2-Cr-foI"/>
+                        <outlet property="scrollView" destination="Jrs-o4-aBB" id="uW9-5b-q3Z"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YJc-Rp-15D" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1903.2" y="160.56971514242881"/>
+        </scene>
+        <!--Admin-->
+        <scene sceneID="HVf-zw-HDd">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Admin" id="RNo-b4-AuJ" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="scg-kz-34j" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2494" y="15"/>
+        </scene>
+        <!--Explore-->
+        <scene sceneID="PUp-me-sww">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Explore" id="MFm-B5-5ea" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1rq-cG-lLj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2490" y="279"/>
+        </scene>
+    </scenes>
+</document>

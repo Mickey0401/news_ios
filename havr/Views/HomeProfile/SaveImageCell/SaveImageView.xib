@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Roboto-Regular.ttf">
+            <string>Roboto-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="SaveImageView" id="U6b-Vx-4bR" customClass="SaveImageView" customModule="havr" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="48" height="68"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="E3Y-bN-ZDY">
+                    <rect key="frame" x="0.0" y="0.0" width="38" height="68"/>
+                    <subviews>
+                        <imageView multipleTouchEnabled="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="C save icon" translatesAutoresizingMaskIntoConstraints="NO" id="3p6-uJ-RDB">
+                            <rect key="frame" x="3" y="3" width="32" height="32"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="3p6-uJ-RDB" secondAttribute="height" multiplier="1:1" id="tVh-qq-PQ2"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="save" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aks-Tu-daD">
+                            <rect key="frame" x="0.0" y="43" width="38" height="12"/>
+                            <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="10"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cns-5k-DRd">
+                            <rect key="frame" x="0.0" y="0.0" width="38" height="68"/>
+                            <connections>
+                                <action selector="saveButtonPressed:" destination="U6b-Vx-4bR" eventType="touchUpInside" id="79f-7Y-Wy5"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="Cns-5k-DRd" firstAttribute="leading" secondItem="E3Y-bN-ZDY" secondAttribute="leading" id="3HD-oG-UQz"/>
+                        <constraint firstItem="3p6-uJ-RDB" firstAttribute="leading" secondItem="E3Y-bN-ZDY" secondAttribute="leading" constant="3" id="5LJ-UL-z0v"/>
+                        <constraint firstItem="3p6-uJ-RDB" firstAttribute="top" secondItem="E3Y-bN-ZDY" secondAttribute="top" constant="3" id="I3m-nz-qIn"/>
+                        <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="aks-Tu-daD" secondAttribute="bottom" id="SFn-8p-nfj"/>
+                        <constraint firstAttribute="trailing" secondItem="aks-Tu-daD" secondAttribute="trailing" id="UXA-Mb-i9q"/>
+                        <constraint firstItem="Cns-5k-DRd" firstAttribute="top" secondItem="E3Y-bN-ZDY" secondAttribute="top" id="YFp-2R-Cf5"/>
+                        <constraint firstAttribute="bottom" secondItem="Cns-5k-DRd" secondAttribute="bottom" id="d4i-Je-yle"/>
+                        <constraint firstAttribute="trailing" secondItem="3p6-uJ-RDB" secondAttribute="trailing" constant="3" id="l5Q-wE-SvK"/>
+                        <constraint firstAttribute="trailing" secondItem="Cns-5k-DRd" secondAttribute="trailing" id="oqP-K7-GfM"/>
+                        <constraint firstItem="aks-Tu-daD" firstAttribute="leading" secondItem="E3Y-bN-ZDY" secondAttribute="leading" id="t4f-SB-IBz"/>
+                        <constraint firstItem="aks-Tu-daD" firstAttribute="top" secondItem="3p6-uJ-RDB" secondAttribute="bottom" constant="8" id="zvh-Hp-5Xg"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <constraints>
+                <constraint firstItem="E3Y-bN-ZDY" firstAttribute="leading" secondItem="U6b-Vx-4bR" secondAttribute="leading" id="A1G-31-I2O"/>
+                <constraint firstAttribute="trailing" secondItem="E3Y-bN-ZDY" secondAttribute="trailing" constant="10" id="PqI-SP-Bi4"/>
+                <constraint firstAttribute="bottom" secondItem="E3Y-bN-ZDY" secondAttribute="bottom" id="WvO-7Y-dmB"/>
+                <constraint firstItem="E3Y-bN-ZDY" firstAttribute="top" secondItem="U6b-Vx-4bR" secondAttribute="top" id="hnz-Ar-XVN"/>
+            </constraints>
+            <connections>
+                <outlet property="backView" destination="E3Y-bN-ZDY" id="HXh-D6-iRN"/>
+                <outlet property="imageView" destination="3p6-uJ-RDB" id="fdd-Tq-s4D"/>
+                <outlet property="saveButton" destination="Cns-5k-DRd" id="aaf-u0-sdq"/>
+                <outlet property="saveLabel" destination="aks-Tu-daD" id="Okl-YW-czZ"/>
+            </connections>
+            <point key="canvasLocation" x="21" y="99"/>
+        </collectionReusableView>
+    </objects>
+    <resources>
+        <image name="C save icon" width="60" height="60"/>
+    </resources>
+</document>

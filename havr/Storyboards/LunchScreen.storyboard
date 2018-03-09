@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="EbR-kQ-bdm">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Roboto-Regular.ttf">
+            <string>Roboto-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="B5v-oW-CUr">
+            <objects>
+                <viewController id="EbR-kQ-bdm" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="bUa-ez-b8V"/>
+                        <viewControllerLayoutGuide type="bottom" id="bCO-03-TV0"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ap9-7H-eGZ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="neT-HH-M2h">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="newBack" translatesAutoresizingMaskIntoConstraints="NO" id="jfx-6U-4GU">
+                                        <rect key="frame" x="-0.5" y="-0.5" width="376.5" height="668.5"/>
+                                    </imageView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ypv-7G-7l3">
+                                        <rect key="frame" x="77.5" y="285.5" width="221.5" height="97.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Join the community." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pTZ-OC-k1l">
+                                                <rect key="frame" x="10" y="68" width="201.5" height="29.5"/>
+                                                <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="22"/>
+                                                <color key="textColor" red="0.40784313725490196" green="0.50196078431372548" blue="0.63529411764705879" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Havr name" translatesAutoresizingMaskIntoConstraints="NO" id="4en-04-Mmq">
+                                                <rect key="frame" x="50.5" y="0.0" width="119" height="48"/>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstItem="pTZ-OC-k1l" firstAttribute="top" secondItem="4en-04-Mmq" secondAttribute="bottom" constant="20" id="6GO-T9-7fl"/>
+                                            <constraint firstItem="pTZ-OC-k1l" firstAttribute="centerX" secondItem="Ypv-7G-7l3" secondAttribute="centerX" id="HGf-AL-CpW"/>
+                                            <constraint firstAttribute="bottom" secondItem="pTZ-OC-k1l" secondAttribute="bottom" id="Ir7-4c-gzB"/>
+                                            <constraint firstItem="pTZ-OC-k1l" firstAttribute="leading" secondItem="Ypv-7G-7l3" secondAttribute="leading" constant="10" id="SCO-1W-1Ld"/>
+                                            <constraint firstItem="4en-04-Mmq" firstAttribute="centerX" secondItem="Ypv-7G-7l3" secondAttribute="centerX" id="Yxl-bE-Jql"/>
+                                            <constraint firstAttribute="trailing" secondItem="pTZ-OC-k1l" secondAttribute="trailing" constant="10" id="rmE-nV-R97"/>
+                                            <constraint firstItem="4en-04-Mmq" firstAttribute="top" secondItem="Ypv-7G-7l3" secondAttribute="top" id="zlA-r8-z3a"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" red="0.27843137254901962" green="0.40392156862745099" blue="0.55294117647058827" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="jfx-6U-4GU" secondAttribute="trailing" constant="-1" id="01W-GC-Onx"/>
+                                    <constraint firstAttribute="bottom" secondItem="jfx-6U-4GU" secondAttribute="bottom" constant="-1" id="7WQ-nF-yW2"/>
+                                    <constraint firstItem="jfx-6U-4GU" firstAttribute="centerX" secondItem="neT-HH-M2h" secondAttribute="centerX" id="GOe-sK-kmm"/>
+                                    <constraint firstItem="Ypv-7G-7l3" firstAttribute="centerX" secondItem="neT-HH-M2h" secondAttribute="centerX" id="Gem-6k-rlq"/>
+                                    <constraint firstItem="Ypv-7G-7l3" firstAttribute="centerY" secondItem="neT-HH-M2h" secondAttribute="centerY" id="J2L-ed-fVi"/>
+                                    <constraint firstItem="jfx-6U-4GU" firstAttribute="centerY" secondItem="neT-HH-M2h" secondAttribute="centerY" id="g6s-WD-RAP"/>
+                                    <constraint firstItem="jfx-6U-4GU" firstAttribute="top" secondItem="neT-HH-M2h" secondAttribute="top" constant="-1" id="hu5-LO-puU"/>
+                                    <constraint firstItem="jfx-6U-4GU" firstAttribute="leading" secondItem="neT-HH-M2h" secondAttribute="leading" constant="-1" id="v7w-m1-wOl"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="neT-HH-M2h" firstAttribute="leading" secondItem="ap9-7H-eGZ" secondAttribute="leading" id="Nhn-Ch-uLf"/>
+                            <constraint firstItem="neT-HH-M2h" firstAttribute="top" secondItem="ap9-7H-eGZ" secondAttribute="top" id="RM4-Zs-cra"/>
+                            <constraint firstAttribute="trailing" secondItem="neT-HH-M2h" secondAttribute="trailing" id="f61-gc-YwU"/>
+                            <constraint firstItem="bCO-03-TV0" firstAttribute="top" secondItem="neT-HH-M2h" secondAttribute="bottom" id="tkV-Z9-Br5"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9qW-Ld-3CV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="53.600000000000001" y="133.5832083958021"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Havr name" width="119" height="48"/>
+        <image name="newBack" width="375" height="667"/>
+    </resources>
+</document>

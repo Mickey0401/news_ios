@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Roboto-Regular.ttf">
+            <string>Roboto-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="InterestHeaderCollectionReusableView" id="U6b-Vx-4bR" customClass="InterestHeaderCollectionReusableView" customModule="havr" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="395" height="160"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y2m-ee-84Q">
+                    <rect key="frame" x="16" y="46" width="363" height="42.5"/>
+                    <string key="text">You can select up to 5 interests. Your interests are things that you do over and over again which you want to add as part of your portfolio.</string>
+                    <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="12"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nLF-qh-9dv" customClass="TwicketSegmentedControl" customModule="havr" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="104" width="395" height="40"/>
+                    <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="kni-yf-smV"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Selected 1 of 5 " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DWl-ZI-9PU">
+                    <rect key="frame" x="16" y="16" width="363" height="14.5"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="15" id="cbg-bi-bnM"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="12"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <constraints>
+                <constraint firstItem="DWl-ZI-9PU" firstAttribute="leading" secondItem="U6b-Vx-4bR" secondAttribute="leading" constant="16" id="13Q-J7-FG9"/>
+                <constraint firstItem="Y2m-ee-84Q" firstAttribute="leading" secondItem="U6b-Vx-4bR" secondAttribute="leading" constant="16" id="6HB-IK-9PD"/>
+                <constraint firstAttribute="bottom" secondItem="nLF-qh-9dv" secondAttribute="bottom" constant="16" id="TkG-vF-RTd"/>
+                <constraint firstAttribute="trailing" secondItem="Y2m-ee-84Q" secondAttribute="trailing" constant="16" id="UFw-we-lWv"/>
+                <constraint firstItem="Y2m-ee-84Q" firstAttribute="top" secondItem="DWl-ZI-9PU" secondAttribute="bottom" constant="15" id="VQ9-zc-sgV"/>
+                <constraint firstAttribute="trailing" secondItem="DWl-ZI-9PU" secondAttribute="trailing" constant="16" id="Vxd-0m-pem"/>
+                <constraint firstItem="DWl-ZI-9PU" firstAttribute="top" secondItem="U6b-Vx-4bR" secondAttribute="top" constant="16" id="g9j-jh-QIK"/>
+                <constraint firstItem="nLF-qh-9dv" firstAttribute="leading" secondItem="U6b-Vx-4bR" secondAttribute="leading" id="h7x-rf-9bt"/>
+                <constraint firstAttribute="trailing" secondItem="nLF-qh-9dv" secondAttribute="trailing" id="tnc-7I-ARo"/>
+            </constraints>
+            <connections>
+                <outlet property="segmentController" destination="nLF-qh-9dv" id="UfQ-ds-Tju"/>
+                <outlet property="segmentLabel" destination="Y2m-ee-84Q" id="Chy-OZ-fOy"/>
+                <outlet property="selectedLabel" destination="DWl-ZI-9PU" id="mor-Kj-tOB"/>
+            </connections>
+            <point key="canvasLocation" x="20.5" y="31.5"/>
+        </collectionReusableView>
+    </objects>
+</document>

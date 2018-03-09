@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="EventsCollectionCell" customModule="havr" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="172" height="244"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="172" height="244"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OjL-v8-356">
+                        <rect key="frame" x="0.0" y="0.0" width="172" height="244"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <imageView contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="fmq-I4-HR1">
+                        <rect key="frame" x="0.0" y="0.0" width="172" height="244"/>
+                    </imageView>
+                    <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="white" translatesAutoresizingMaskIntoConstraints="NO" id="Slt-gC-elh">
+                        <rect key="frame" x="76.5" y="112.5" width="20" height="20"/>
+                    </activityIndicatorView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dID-Xn-9Ic">
+                        <rect key="frame" x="0.0" y="0.0" width="172" height="244"/>
+                        <connections>
+                            <action selector="touchButtonDown:" destination="gTV-IL-0wX" eventType="touchDown" id="wy7-gd-jSV"/>
+                            <action selector="touchButtonOpInside:forEvent:" destination="gTV-IL-0wX" eventType="touchUpInside" id="1fl-xr-U8O"/>
+                        </connections>
+                    </button>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="OjL-v8-356" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="8fM-Ce-117"/>
+                <constraint firstAttribute="bottom" secondItem="OjL-v8-356" secondAttribute="bottom" id="Cso-CW-iUM"/>
+                <constraint firstItem="dID-Xn-9Ic" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="EuE-ld-e8G"/>
+                <constraint firstItem="fmq-I4-HR1" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="FtN-Dz-ze3"/>
+                <constraint firstAttribute="trailing" secondItem="fmq-I4-HR1" secondAttribute="trailing" id="Kqg-tE-9T5"/>
+                <constraint firstAttribute="bottom" secondItem="dID-Xn-9Ic" secondAttribute="bottom" id="NDV-6e-oag"/>
+                <constraint firstItem="dID-Xn-9Ic" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="TUE-PF-axR"/>
+                <constraint firstItem="Slt-gC-elh" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="VuY-MZ-JaH"/>
+                <constraint firstAttribute="trailing" secondItem="dID-Xn-9Ic" secondAttribute="trailing" id="XFU-PN-LT8"/>
+                <constraint firstAttribute="trailing" secondItem="OjL-v8-356" secondAttribute="trailing" id="XI7-vb-mWP"/>
+                <constraint firstItem="fmq-I4-HR1" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="fcf-w8-Uux"/>
+                <constraint firstAttribute="bottom" secondItem="fmq-I4-HR1" secondAttribute="bottom" id="g2h-de-TEP"/>
+                <constraint firstItem="Slt-gC-elh" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="idh-QB-tg0"/>
+                <constraint firstItem="OjL-v8-356" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="t92-8m-nZS"/>
+            </constraints>
+            <size key="customSize" width="172" height="244"/>
+            <connections>
+                <outlet property="imageView" destination="fmq-I4-HR1" id="sEo-1x-7nM"/>
+                <outlet property="loadingActivityIndicator" destination="Slt-gC-elh" id="BiO-Wv-hv1"/>
+                <outlet property="touchButton" destination="dID-Xn-9Ic" id="Awg-sn-k8i"/>
+            </connections>
+            <point key="canvasLocation" x="-28" y="9"/>
+        </collectionViewCell>
+    </objects>
+</document>

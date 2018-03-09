@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Roboto-Regular.ttf">
+            <string>Roboto-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="qbY-BN-mzX">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="60"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CFc-Ya-smi">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="60"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l6l-1q-sGU">
+                            <rect key="frame" x="359" y="10" width="40" height="40"/>
+                            <color key="backgroundColor" red="0.2784313725" green="0.4039215686" blue="0.55294117649999996" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="40" id="oKe-2I-tbn"/>
+                                <constraint firstAttribute="height" constant="40" id="z2O-8R-Z6c"/>
+                            </constraints>
+                            <state key="normal" image="plus-sign"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="20"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </button>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9fV-SE-GL8">
+                            <rect key="frame" x="10" y="30" width="339" height="1"/>
+                            <color key="backgroundColor" red="0.80000000000000004" green="0.79607843137254897" blue="0.80392156862745101" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="ytL-O4-7M3"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AeK-dk-pEH">
+                            <rect key="frame" x="173" y="22" width="69" height="16"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My activity" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OUf-gf-HnX">
+                                    <rect key="frame" x="5" y="0.0" width="59" height="16"/>
+                                    <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="12"/>
+                                    <color key="textColor" red="0.80000000000000004" green="0.79607843140000001" blue="0.80392156859999997" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstItem="OUf-gf-HnX" firstAttribute="top" secondItem="AeK-dk-pEH" secondAttribute="top" id="GEk-t2-9GY"/>
+                                <constraint firstAttribute="bottom" secondItem="OUf-gf-HnX" secondAttribute="bottom" id="g4z-nZ-HzS"/>
+                                <constraint firstItem="OUf-gf-HnX" firstAttribute="leading" secondItem="AeK-dk-pEH" secondAttribute="leading" constant="5" id="hL4-ZT-7VG"/>
+                                <constraint firstAttribute="trailing" secondItem="OUf-gf-HnX" secondAttribute="trailing" constant="5" id="jza-Eh-4ZV"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="l6l-1q-sGU" firstAttribute="top" secondItem="CFc-Ya-smi" secondAttribute="top" constant="10" id="3Z0-o9-070"/>
+                        <constraint firstAttribute="bottom" secondItem="l6l-1q-sGU" secondAttribute="bottom" constant="10" id="75C-DL-Pj1"/>
+                        <constraint firstItem="l6l-1q-sGU" firstAttribute="leading" secondItem="9fV-SE-GL8" secondAttribute="trailing" constant="10" id="CZm-Uh-MEp"/>
+                        <constraint firstAttribute="trailing" secondItem="l6l-1q-sGU" secondAttribute="trailing" constant="15" id="Hp8-2P-GRY"/>
+                        <constraint firstItem="9fV-SE-GL8" firstAttribute="centerY" secondItem="CFc-Ya-smi" secondAttribute="centerY" id="TSt-Vf-Fop"/>
+                        <constraint firstItem="AeK-dk-pEH" firstAttribute="centerY" secondItem="CFc-Ya-smi" secondAttribute="centerY" id="l9q-eQ-6l6"/>
+                        <constraint firstItem="9fV-SE-GL8" firstAttribute="leading" secondItem="CFc-Ya-smi" secondAttribute="leading" constant="10" id="sOk-av-PW5"/>
+                        <constraint firstItem="AeK-dk-pEH" firstAttribute="centerX" secondItem="CFc-Ya-smi" secondAttribute="centerX" id="wUQ-Cx-FNu"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="CFc-Ya-smi" firstAttribute="top" secondItem="qbY-BN-mzX" secondAttribute="top" id="CeH-ce-hFj"/>
+                <constraint firstAttribute="bottom" secondItem="CFc-Ya-smi" secondAttribute="bottom" id="Mca-uF-9hf"/>
+                <constraint firstItem="CFc-Ya-smi" firstAttribute="leading" secondItem="qbY-BN-mzX" secondAttribute="leading" id="dBw-H1-FaM"/>
+                <constraint firstAttribute="trailing" secondItem="CFc-Ya-smi" secondAttribute="trailing" id="vlg-na-hfe"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="38" y="-360"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="plus-sign" width="20" height="20"/>
+    </resources>
+</document>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="PTS55F.ttf">
+            <string>PTSans-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ReceiverImageTableCell" rowHeight="202" id="KGk-i7-Jjw" customClass="ConversationTableCell" customModule="havr" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="350" height="202"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="350" height="201.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6T2-0i-W3l" customClass="CornerSpecView" customModule="havr" customModuleProvider="target">
+                        <rect key="frame" x="10" y="0.0" width="280" height="196.5"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="yo4-Nx-pj9">
+                                <rect key="frame" x="5" y="5" width="270" height="186.5"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="7"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jFV-gx-hGq" customClass="TimeLabelBgView" customModule="havr" customModuleProvider="target">
+                                <rect key="frame" x="232.5" y="165.5" width="35.5" height="19"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gRx-0h-6N5">
+                                        <rect key="frame" x="6" y="3" width="23.5" height="13"/>
+                                        <fontDescription key="fontDescription" name="PTSans-Regular" family="PT Sans" pointSize="10"/>
+                                        <color key="textColor" red="0.54780238069999998" green="0.55584352940000004" blue="0.57996697529999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="gRx-0h-6N5" firstAttribute="centerY" secondItem="jFV-gx-hGq" secondAttribute="centerY" id="Jpq-Xv-s4Q"/>
+                                    <constraint firstItem="gRx-0h-6N5" firstAttribute="top" secondItem="jFV-gx-hGq" secondAttribute="top" constant="3" id="QRA-w6-LX1"/>
+                                    <constraint firstItem="gRx-0h-6N5" firstAttribute="leading" secondItem="jFV-gx-hGq" secondAttribute="leading" constant="6" id="WSr-zg-6ro"/>
+                                    <constraint firstAttribute="bottom" secondItem="gRx-0h-6N5" secondAttribute="bottom" constant="3" id="eDb-zq-ulF"/>
+                                    <constraint firstAttribute="trailing" secondItem="gRx-0h-6N5" secondAttribute="trailing" constant="6" id="zfx-o9-PJg"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="yo4-Nx-pj9" secondAttribute="trailing" constant="5" id="9mp-GB-XZe"/>
+                            <constraint firstAttribute="bottom" secondItem="yo4-Nx-pj9" secondAttribute="bottom" constant="5" id="I3e-Us-8kW"/>
+                            <constraint firstItem="yo4-Nx-pj9" firstAttribute="leading" secondItem="6T2-0i-W3l" secondAttribute="leading" constant="5" id="Iao-RY-qRg"/>
+                            <constraint firstItem="yo4-Nx-pj9" firstAttribute="top" secondItem="6T2-0i-W3l" secondAttribute="top" constant="5" id="PXM-el-K3E"/>
+                            <constraint firstAttribute="bottom" secondItem="jFV-gx-hGq" secondAttribute="bottom" constant="12" id="moS-rg-po3"/>
+                            <constraint firstAttribute="width" constant="280" id="sFa-pW-iXc"/>
+                            <constraint firstAttribute="trailing" secondItem="jFV-gx-hGq" secondAttribute="trailing" constant="12" id="uUg-YG-jaG"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="7"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                <color key="value" red="0.81568627449999997" green="0.81568627449999997" blue="0.81568627449999997" alpha="1" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                                <size key="value" width="0.0" height="1"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="niy-Ow-SX6">
+                        <rect key="frame" x="295" y="83.5" width="30" height="30"/>
+                        <state key="normal" image="M retry icon"/>
+                    </button>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                <constraints>
+                    <constraint firstItem="6T2-0i-W3l" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="4jE-Ug-Mgv"/>
+                    <constraint firstItem="6T2-0i-W3l" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="AwS-Kn-H81"/>
+                    <constraint firstItem="niy-Ow-SX6" firstAttribute="leading" secondItem="6T2-0i-W3l" secondAttribute="trailing" constant="5" id="R4M-lz-odB"/>
+                    <constraint firstItem="niy-Ow-SX6" firstAttribute="centerY" secondItem="6T2-0i-W3l" secondAttribute="centerY" id="kGI-CS-VbE"/>
+                    <constraint firstAttribute="bottom" secondItem="6T2-0i-W3l" secondAttribute="bottom" constant="5" id="vJ5-7m-wJj"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <connections>
+                <outlet property="messageImageView" destination="yo4-Nx-pj9" id="VzQ-Qx-bW9"/>
+                <outlet property="retryButton" destination="niy-Ow-SX6" id="Vzd-BP-10R"/>
+                <outlet property="shadowView" destination="6T2-0i-W3l" id="qZf-Ap-osA"/>
+                <outlet property="timeLabel" destination="gRx-0h-6N5" id="QmD-f3-Ovv"/>
+            </connections>
+            <point key="canvasLocation" x="-65" y="85"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="M retry icon" width="30" height="30"/>
+    </resources>
+</document>

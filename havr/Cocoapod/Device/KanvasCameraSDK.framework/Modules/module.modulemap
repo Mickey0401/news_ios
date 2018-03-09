@@ -1,0 +1,6 @@
+framework module KanvasCameraSDK {
+  umbrella header "KanvasCameraSDK.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Roboto-Regular.ttf">
+            <string>Roboto-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="137" id="KGk-i7-Jjw" customClass="CreateEventTableCell" customModule="havr" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="126"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="125.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zPw-r2-BfR">
+                        <rect key="frame" x="50" y="47" width="314" height="77"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Start" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6j9-VN-4bF">
+                                <rect key="frame" x="0.0" y="6" width="30" height="14"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="30" id="69y-c8-d0C"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="12"/>
+                                <color key="textColor" red="0.2784313725" green="0.4039215686" blue="0.55294117649999996" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Select date and time" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2aM-BX-EXS">
+                                <rect key="frame" x="40" y="0.0" width="235" height="26"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="26" id="Tgo-lo-b51"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="13"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SUm-qQ-FiW">
+                                <rect key="frame" x="294" y="3" width="20" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="QSB-2e-cw2"/>
+                                    <constraint firstAttribute="width" constant="20" id="nzH-hQ-uHg"/>
+                                </constraints>
+                                <state key="normal" image="calendar"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="End" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tAR-xH-nKw">
+                                <rect key="frame" x="0.0" y="57" width="30" height="14"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="30" id="j3l-dv-5OT"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="12"/>
+                                <color key="textColor" red="0.2784313725" green="0.4039215686" blue="0.55294117649999996" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Select date and time" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DGb-aN-PPF">
+                                <rect key="frame" x="40" y="51" width="235" height="26"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="26" id="qva-At-Wgs"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="13"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l7F-75-IVl">
+                                <rect key="frame" x="294" y="54" width="20" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="20" id="4Pa-cV-0XE"/>
+                                    <constraint firstAttribute="height" constant="20" id="YDq-5F-cty"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="calendar"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="2aM-BX-EXS" firstAttribute="top" secondItem="zPw-r2-BfR" secondAttribute="top" id="32j-Xh-dte"/>
+                            <constraint firstItem="6j9-VN-4bF" firstAttribute="centerY" secondItem="2aM-BX-EXS" secondAttribute="centerY" id="9An-HZ-r6h"/>
+                            <constraint firstItem="l7F-75-IVl" firstAttribute="leading" secondItem="DGb-aN-PPF" secondAttribute="trailing" constant="19" id="9WO-Sb-JfH"/>
+                            <constraint firstItem="2aM-BX-EXS" firstAttribute="leading" secondItem="6j9-VN-4bF" secondAttribute="trailing" constant="10" id="A7F-QO-27U"/>
+                            <constraint firstItem="l7F-75-IVl" firstAttribute="centerY" secondItem="DGb-aN-PPF" secondAttribute="centerY" id="DaP-wG-jKD"/>
+                            <constraint firstItem="SUm-qQ-FiW" firstAttribute="leading" secondItem="2aM-BX-EXS" secondAttribute="trailing" constant="19" id="EaV-A0-E1z"/>
+                            <constraint firstAttribute="trailing" secondItem="l7F-75-IVl" secondAttribute="trailing" id="GIS-Om-GYj"/>
+                            <constraint firstAttribute="height" constant="77" id="LkR-OX-i1T"/>
+                            <constraint firstItem="SUm-qQ-FiW" firstAttribute="centerY" secondItem="2aM-BX-EXS" secondAttribute="centerY" id="MjP-6b-Jpa"/>
+                            <constraint firstAttribute="trailing" secondItem="SUm-qQ-FiW" secondAttribute="trailing" id="Vb9-CJ-tjV"/>
+                            <constraint firstItem="DGb-aN-PPF" firstAttribute="leading" secondItem="tAR-xH-nKw" secondAttribute="trailing" constant="10" id="cWC-ez-03S"/>
+                            <constraint firstItem="tAR-xH-nKw" firstAttribute="centerY" secondItem="DGb-aN-PPF" secondAttribute="centerY" id="fra-yI-hl8"/>
+                            <constraint firstItem="6j9-VN-4bF" firstAttribute="leading" secondItem="zPw-r2-BfR" secondAttribute="leading" id="jLh-tp-8fH"/>
+                            <constraint firstItem="DGb-aN-PPF" firstAttribute="top" secondItem="2aM-BX-EXS" secondAttribute="bottom" constant="25" id="n5I-tp-XFV"/>
+                            <constraint firstItem="tAR-xH-nKw" firstAttribute="leading" secondItem="zPw-r2-BfR" secondAttribute="leading" id="ynW-t3-Qhi"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="zPw-r2-BfR" secondAttribute="bottom" constant="2" id="46j-g4-Ne0"/>
+                    <constraint firstItem="zPw-r2-BfR" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="47" id="FBx-Go-K3x"/>
+                    <constraint firstItem="zPw-r2-BfR" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="50" id="Iu4-fj-ojc"/>
+                    <constraint firstAttribute="trailing" secondItem="zPw-r2-BfR" secondAttribute="trailing" constant="50" id="W21-Ti-ltJ"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="endDateTextFied" destination="DGb-aN-PPF" id="z2D-Pq-fIB"/>
+                <outlet property="startDateTextField" destination="2aM-BX-EXS" id="7Rd-SA-5pN"/>
+            </connections>
+            <point key="canvasLocation" x="-18" y="39"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="calendar" width="20" height="20"/>
+    </resources>
+</document>

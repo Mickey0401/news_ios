@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Roboto-Medium.ttf">
+            <string>Roboto-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="InterestListCollectionCell" customModule="havr" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="356" height="55"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="356" height="55"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RcS-7B-lxz">
+                        <rect key="frame" x="0.0" y="0.0" width="356" height="55"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="IWn-hD-8Zk">
+                                <rect key="frame" x="12" y="10" width="35" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="IWn-hD-8Zk" secondAttribute="height" multiplier="1:1" id="edn-mf-X8g"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u4g-ck-bbw">
+                                <rect key="frame" x="55" y="5" width="293" height="45"/>
+                                <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view hidden="YES" alpha="0.90000000000000002" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vfB-X0-4Gq">
+                                <rect key="frame" x="0.0" y="0.0" width="356" height="55"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="P checkInterest icon" translatesAutoresizingMaskIntoConstraints="NO" id="DTJ-8a-Yl8">
+                                        <rect key="frame" x="164" y="18" width="27" height="18"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="DTJ-8a-Yl8" firstAttribute="centerX" secondItem="vfB-X0-4Gq" secondAttribute="centerX" id="LyW-GQ-AY9"/>
+                                    <constraint firstItem="DTJ-8a-Yl8" firstAttribute="centerY" secondItem="vfB-X0-4Gq" secondAttribute="centerY" id="aYu-B3-big"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="u4g-ck-bbw" secondAttribute="trailing" constant="8" id="84y-VI-hYv"/>
+                            <constraint firstAttribute="bottom" secondItem="IWn-hD-8Zk" secondAttribute="bottom" constant="10" id="9s6-h6-XLF"/>
+                            <constraint firstItem="vfB-X0-4Gq" firstAttribute="height" secondItem="RcS-7B-lxz" secondAttribute="height" id="Li8-KR-7ED"/>
+                            <constraint firstItem="u4g-ck-bbw" firstAttribute="leading" secondItem="IWn-hD-8Zk" secondAttribute="trailing" constant="8" id="MAs-1e-FbJ"/>
+                            <constraint firstAttribute="bottom" secondItem="u4g-ck-bbw" secondAttribute="bottom" constant="5" id="PgJ-Ra-iIP"/>
+                            <constraint firstItem="IWn-hD-8Zk" firstAttribute="top" secondItem="RcS-7B-lxz" secondAttribute="top" constant="10" id="UgV-mR-rf0"/>
+                            <constraint firstAttribute="height" relation="lessThanOrEqual" constant="200" id="XxB-Fw-V5w"/>
+                            <constraint firstItem="vfB-X0-4Gq" firstAttribute="centerX" secondItem="RcS-7B-lxz" secondAttribute="centerX" id="ZBB-55-5NC"/>
+                            <constraint firstItem="vfB-X0-4Gq" firstAttribute="centerY" secondItem="RcS-7B-lxz" secondAttribute="centerY" id="bbQ-iN-Brl"/>
+                            <constraint firstItem="IWn-hD-8Zk" firstAttribute="leading" secondItem="RcS-7B-lxz" secondAttribute="leading" constant="12" id="cQo-Bc-tpT"/>
+                            <constraint firstItem="vfB-X0-4Gq" firstAttribute="width" secondItem="RcS-7B-lxz" secondAttribute="width" id="li2-Nw-VO9"/>
+                            <constraint firstItem="u4g-ck-bbw" firstAttribute="top" secondItem="RcS-7B-lxz" secondAttribute="top" constant="5" id="nRM-h0-eBg"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="32.5"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                <real key="value" value="1"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                <color key="value" red="0.8980392157" green="0.8980392157" blue="0.8980392157" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="RcS-7B-lxz" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="COU-oj-0Ss"/>
+                <constraint firstAttribute="trailing" secondItem="RcS-7B-lxz" secondAttribute="trailing" id="X4C-Gt-HCf"/>
+                <constraint firstItem="RcS-7B-lxz" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="lSd-vz-osb"/>
+                <constraint firstAttribute="bottom" secondItem="RcS-7B-lxz" secondAttribute="bottom" id="p6f-b3-efB"/>
+            </constraints>
+            <size key="customSize" width="356" height="105"/>
+            <connections>
+                <outlet property="interestBackgroundView" destination="RcS-7B-lxz" id="myg-tb-HWu"/>
+                <outlet property="interestImageView" destination="IWn-hD-8Zk" id="3Fh-RA-KgY"/>
+                <outlet property="interestNameLabel" destination="u4g-ck-bbw" id="8fv-RN-h4e"/>
+                <outlet property="isActiveView" destination="vfB-X0-4Gq" id="Xk0-uR-5ZV"/>
+            </connections>
+            <point key="canvasLocation" x="50" y="72.5"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="P checkInterest icon" width="27" height="18"/>
+    </resources>
+</document>

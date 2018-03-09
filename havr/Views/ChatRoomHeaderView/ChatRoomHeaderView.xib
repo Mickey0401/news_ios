@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Roboto-Medium.ttf">
+            <string>Roboto-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="8ja-Yq-kqZ" customClass="ChatRoomHeaderView" customModule="havr" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ExploreChatImage" translatesAutoresizingMaskIntoConstraints="NO" id="bWk-I8-Rxn">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="300"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="300" id="miq-4y-OIM"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Welcome To Starbucks!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Hf-nN-fC5">
+                    <rect key="frame" x="20" y="327" width="335" height="16.5"/>
+                    <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="14"/>
+                    <color key="textColor" red="0.27450980390000002" green="0.27450980390000002" blue="0.27450980390000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Be the first to share your thoughts in this place anonymously…" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O1c-I4-hKM">
+                    <rect key="frame" x="20" y="368.5" width="335" height="33"/>
+                    <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="14"/>
+                    <color key="textColor" red="0.27450980390000002" green="0.27450980390000002" blue="0.27450980390000002" alpha="0.50210889569999995" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="bWk-I8-Rxn" secondAttribute="trailing" id="4eR-Q4-2d3"/>
+                <constraint firstAttribute="trailing" secondItem="1Hf-nN-fC5" secondAttribute="trailing" constant="20" id="5MG-3K-ygQ"/>
+                <constraint firstItem="O1c-I4-hKM" firstAttribute="top" secondItem="1Hf-nN-fC5" secondAttribute="bottom" constant="25" id="DEg-72-VdL"/>
+                <constraint firstAttribute="trailing" secondItem="O1c-I4-hKM" secondAttribute="trailing" constant="20" id="FAe-AM-Lzu"/>
+                <constraint firstItem="1Hf-nN-fC5" firstAttribute="top" secondItem="bWk-I8-Rxn" secondAttribute="bottom" constant="27" id="Q7d-hi-p5w"/>
+                <constraint firstItem="1Hf-nN-fC5" firstAttribute="leading" secondItem="8ja-Yq-kqZ" secondAttribute="leading" constant="20" id="Z0P-yJ-qiP"/>
+                <constraint firstItem="bWk-I8-Rxn" firstAttribute="leading" secondItem="8ja-Yq-kqZ" secondAttribute="leading" id="ZMr-1C-oP5"/>
+                <constraint firstItem="1Hf-nN-fC5" firstAttribute="centerX" secondItem="8ja-Yq-kqZ" secondAttribute="centerX" id="ZnZ-ga-URS"/>
+                <constraint firstItem="bWk-I8-Rxn" firstAttribute="top" secondItem="8ja-Yq-kqZ" secondAttribute="top" id="aTn-mP-B91"/>
+                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="O1c-I4-hKM" secondAttribute="bottom" constant="5" id="b1A-F1-pfa"/>
+                <constraint firstItem="O1c-I4-hKM" firstAttribute="leading" secondItem="8ja-Yq-kqZ" secondAttribute="leading" constant="20" id="yA9-8g-QY6"/>
+            </constraints>
+            <connections>
+                <outlet property="imageView" destination="bWk-I8-Rxn" id="AHJ-WM-6Kf"/>
+                <outlet property="titleLabel" destination="1Hf-nN-fC5" id="puS-uE-EcQ"/>
+            </connections>
+        </view>
+    </objects>
+    <resources>
+        <image name="ExploreChatImage" width="414" height="486"/>
+    </resources>
+</document>

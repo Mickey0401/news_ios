@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Helvetica.ttc">
+            <string>Helvetica-Bold</string>
+        </array>
+        <array key="Roboto-Regular.ttf">
+            <string>Roboto-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="NCOneLineTableCell" rowHeight="126" id="KGk-i7-Jjw" userLabel="NCOneLineTableCell" customClass="NotificationCenterTableCell" customModule="havr" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="432" height="80"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="432" height="79.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6hm-Tz-Qib">
+                        <rect key="frame" x="0.0" y="0.0" width="432" height="79.5"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="defaultImageUser" translatesAutoresizingMaskIntoConstraints="NO" id="rpF-HP-0ZF" customClass="RoundedImageView" customModule="havr" customModuleProvider="target">
+                                <rect key="frame" x="16" y="25" width="30" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Yi9-z5-PKY"/>
+                                    <constraint firstAttribute="width" constant="30" id="erp-lu-w0C"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" text="--" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EKQ-tV-q4R">
+                                <rect key="frame" x="56" y="32.5" width="366" height="16.5"/>
+                                <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="14"/>
+                                <color key="textColor" red="0.27450980390000002" green="0.27450980390000002" blue="0.27450980390000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=":" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HWU-9t-iJS">
+                                <rect key="frame" x="214.5" y="5" width="3.5" height="22.5"/>
+                                <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="12"/>
+                                <color key="textColor" red="0.70980392160000005" green="0.70980392160000005" blue="0.70980392160000005" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="InT-CP-vR7">
+                                <rect key="frame" x="0.0" y="78" width="432" height="1"/>
+                                <color key="backgroundColor" red="0.8980392157" green="0.8980392157" blue="0.8980392157" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="zmi-yO-bKU"/>
+                                </constraints>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="deletedNotification icon" translatesAutoresizingMaskIntoConstraints="NO" id="jFc-wk-8iR">
+                                <rect key="frame" x="396" y="10" width="20" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="XOj-xD-wrp"/>
+                                    <constraint firstAttribute="width" constant="20" id="zrr-xA-OVD"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="EKQ-tV-q4R" firstAttribute="leading" secondItem="rpF-HP-0ZF" secondAttribute="trailing" constant="10" id="CXC-MO-3K5"/>
+                            <constraint firstItem="EKQ-tV-q4R" firstAttribute="top" secondItem="HWU-9t-iJS" secondAttribute="bottom" constant="5" id="FMo-nA-elV"/>
+                            <constraint firstAttribute="trailing" secondItem="EKQ-tV-q4R" secondAttribute="trailing" constant="10" id="Hve-JK-y61"/>
+                            <constraint firstItem="InT-CP-vR7" firstAttribute="leading" secondItem="6hm-Tz-Qib" secondAttribute="leading" id="Klh-sk-rHX"/>
+                            <constraint firstAttribute="height" constant="80" id="LTN-7J-hdx"/>
+                            <constraint firstItem="EKQ-tV-q4R" firstAttribute="centerY" secondItem="rpF-HP-0ZF" secondAttribute="centerY" id="Py6-te-d7x"/>
+                            <constraint firstItem="HWU-9t-iJS" firstAttribute="top" secondItem="6hm-Tz-Qib" secondAttribute="top" constant="5" id="UW8-W9-OzR"/>
+                            <constraint firstAttribute="bottom" secondItem="InT-CP-vR7" secondAttribute="bottom" id="Yxh-VY-uha"/>
+                            <constraint firstItem="rpF-HP-0ZF" firstAttribute="leading" secondItem="6hm-Tz-Qib" secondAttribute="leading" constant="16" id="duu-Y6-u7Z"/>
+                            <constraint firstItem="HWU-9t-iJS" firstAttribute="centerX" secondItem="6hm-Tz-Qib" secondAttribute="centerX" id="eDQ-mk-B6m"/>
+                            <constraint firstAttribute="trailing" secondItem="InT-CP-vR7" secondAttribute="trailing" id="iGX-Ps-rNM"/>
+                            <constraint firstItem="jFc-wk-8iR" firstAttribute="top" secondItem="6hm-Tz-Qib" secondAttribute="top" constant="10" id="rS5-eF-M21"/>
+                            <constraint firstItem="rpF-HP-0ZF" firstAttribute="centerY" secondItem="6hm-Tz-Qib" secondAttribute="centerY" id="u4n-iD-bHv"/>
+                            <constraint firstAttribute="trailing" secondItem="jFc-wk-8iR" secondAttribute="trailing" constant="16" id="w4Z-Oe-2MS"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="6hm-Tz-Qib" secondAttribute="trailing" id="0wu-y5-I3Q"/>
+                    <constraint firstItem="6hm-Tz-Qib" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="KfF-Iu-Zuh"/>
+                    <constraint firstAttribute="bottom" secondItem="6hm-Tz-Qib" secondAttribute="bottom" id="Y2p-3n-IGp"/>
+                    <constraint firstItem="6hm-Tz-Qib" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="qmZ-HL-KUX"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="notificationTimeLabel" destination="HWU-9t-iJS" id="fVH-OX-3R0"/>
+                <outlet property="notificationTitleLabel" destination="EKQ-tV-q4R" id="Mwe-kz-g1V"/>
+                <outlet property="userImageView" destination="rpF-HP-0ZF" id="wch-qO-XIo"/>
+            </connections>
+            <point key="canvasLocation" x="53" y="92"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="defaultImageUser" width="74" height="73"/>
+        <image name="deletedNotification icon" width="20" height="18"/>
+    </resources>
+</document>

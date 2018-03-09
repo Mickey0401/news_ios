@@ -1,0 +1,280 @@
+{
+  "baseurl": "https://d1d7t1ygvx8siu.cloudfront.net/SDK-Assets/styles",
+  "items": [
+    {
+      "style_name": "6086ec46fd4a8ced8d21200c0bfcdb7c",
+      "readable_name": "Snarl",
+      "thumbnail": "snarl"
+    },
+    {
+      "style_name": "1087df04d7d77e13645cf48905624135",
+      "readable_name": "Fuji",
+      "thumbnail": "fuji"
+    },
+    {
+      "style_name": "0433ead02f51ae7176b53b97fb87349d",
+      "readable_name": "Desert",
+      "thumbnail": "desert"
+    },
+    {
+      "style_name": "11b6161c860c9e2189a7189b0c9eafac",
+      "readable_name": "Hazel",
+      "thumbnail": "hazel"
+    },
+    {
+      "style_name": "b8fb6851a049ae408b56359887777f77",
+      "readable_name": "Farm",
+      "thumbnail": "farm"
+    },
+    {
+      "style_name": "eb4601c0b98253f9afc9ba4b51946218",
+      "readable_name": "Vintage",
+      "thumbnail": "vintage"
+    },
+    {
+      "style_name": "8cf8f32320bbcaedd31bf78be966271b",
+      "readable_name": "Blood Orange",
+      "thumbnail": "bloodorange"
+    },
+    {
+      "style_name": "b6218c281d196490524ecae98772680c",
+      "readable_name": "Fall",
+      "thumbnail": "fall"
+    },
+    {
+      "style_name": "5415b5631ee77f350de71f4339af43e6",
+      "readable_name": "Railway",
+      "thumbnail": "railway"
+    },
+    {
+      "style_name": "a743b377fd7aec5b1d5180a69df057c5",
+      "readable_name": "Garden",
+      "thumbnail": "garden"
+    },
+    {
+      "style_name": "a8d6619f65bf6091c6123ae5a88f8c9d",
+      "readable_name": "Iris",
+      "thumbnail": "iris"
+    },
+    {
+      "style_name": "f6d71d29159d67be53aec998088d1e94",
+      "readable_name": "Dawn",
+      "thumbnail": "dawn"
+    },
+    {
+      "style_name": "fcaba2a9c4a0f307f4c995bd66f95326",
+      "readable_name": "Romance",
+      "thumbnail": "romance"
+    },
+    {
+      "style_name": "262f4bfe213dcf60cc994cf8348525fb",
+      "readable_name": "Wavey",
+      "thumbnail": "wavey"
+    },
+    {
+      "style_name": "f745d6351523497898e5825e259acb32",
+      "readable_name": "Autumn",
+      "thumbnail": "autumn"
+    },
+    {
+      "style_name": "e3b92ff365c8b50e3d9415b51691603f",
+      "readable_name": "Sunday",
+      "thumbnail": "sunday"
+    },
+    {
+      "style_name": "4c4710de183fb6f9fe531480b23f6e70",
+      "readable_name": "Aloha",
+      "thumbnail": "aloha"
+    },
+    {
+      "style_name": "62731073da87c487804774756c01bcf6",
+      "readable_name": "Tropical",
+      "thumbnail": "tropical"
+    },
+    {
+      "style_name": "417c85eb9b4ccc06e913939b2a0b6f18",
+      "readable_name": "North",
+      "thumbnail": "north"
+    },
+    {
+      "style_name": "79edef571303ac4d07e7bc9d829ef76f",
+      "readable_name": "Trippy",
+      "thumbnail": "trippy"
+    },
+    {
+      "style_name": "d1ef36381b58c6776c24fd72733a85b5",
+      "readable_name": "Seafoam",
+      "thumbnail": "seafoam"
+    },
+    {
+      "style_name": "b57d75eff32bd51848b5764a5a8c6b50",
+      "readable_name": "Lake",
+      "thumbnail": "lake"
+    },
+    {
+      "style_name": "73c180bc560cbce2fde6e05f49abc5e1",
+      "readable_name": "Muse",
+      "thumbnail": "muse"
+    },
+    {
+      "style_name": "f68fa3d40303e09693ff98de7655d245",
+      "readable_name": "Glass",
+      "thumbnail": "glass"
+    },
+    {
+      "style_name": "6a567733b14b341a5b0e0704e7decc28",
+      "readable_name": "Angel",
+      "thumbnail": "angel"
+    },
+    {
+      "style_name": "c9f25b8aecc902d5a60da3fdc3a9f381",
+      "readable_name": "June",
+      "thumbnail": "june"
+    },
+    {
+      "style_name": "4ded75915fd22f70e828813cb6ff0f13",
+      "readable_name": "Scales",
+      "thumbnail": "scales"
+    },
+    {
+      "style_name": "373086bb672b8d62ea2976b3207a0273",
+      "readable_name": "Winter",
+      "thumbnail": "winter"
+    },
+    {
+      "style_name": "91c4a68cee2db010c4f6e85f0e86cbed",
+      "readable_name": "Tibet",
+      "thumbnail": "tibet"
+    },
+    {
+      "style_name" : "colpen",
+      "readable_name" : "colored pencil",
+      "thumbnail" : "colpen"
+    },
+    {
+      "style_name" : "buildings",
+      "readable_name" : "oil paint",
+      "thumbnail" : "buildings"
+    },
+    {
+      "style_name" : "starry",
+      "readable_name" : "van gogh",
+      "thumbnail" : "starry"
+    },
+    {
+      "style_name" : "gandi",
+      "readable_name" : "pencil",
+      "thumbnail" : "gandi"
+    },
+    {
+      "style_name" : "colorspots",
+      "readable_name" : "cloudy",
+      "thumbnail" : "colorspots"
+    },
+    {
+      "style_name" : "ballpoint",
+      "readable_name" : "ballpoint",
+      "thumbnail" : "ballpoint"
+    },
+    {
+      "style_name" : "crayon",
+      "readable_name" : "crayon",
+      "thumbnail" : "crayon"
+    },
+    {
+      "style_name" : "blockface",
+      "readable_name" : "blocks",
+      "thumbnail" : "blockface"
+    },
+    {
+      "style_name" : "fancy",
+      "readable_name" : "techno",
+      "thumbnail" : "fancy"
+    },
+    {
+      "style_name" : "fairy",
+      "readable_name" : "tango",
+      "thumbnail" : "fairy"
+    },
+    {
+      "style_name" : "dancer",
+      "readable_name" : "mardi gras",
+      "thumbnail" : "dancer"
+    },
+    {
+      "style_name" : "whale",
+      "readable_name" : "storm",
+      "thumbnail" : "whale"
+    },
+    {
+      "style_name" : "crossstitch",
+      "readable_name" : "cross stitch",
+      "thumbnail" : "crossstitch"
+    },
+    {
+      "style_name" : "buda",
+      "readable_name" : "tribal",
+      "thumbnail" : "buda"
+    },
+    {
+      "style_name" : "boygirl",
+      "readable_name" : "calypso",
+      "thumbnail" : "boygirl"
+    },
+    {
+      "style_name" : "barbarella",
+      "readable_name" : "clay",
+      "thumbnail" : "barbarella"
+    },
+    {
+      "style_name" : "bermuda",
+      "readable_name" : "bermuda",
+      "thumbnail" : "bermuda"
+    },
+    {
+      "style_name" : "feather",
+      "readable_name" : "feather",
+      "thumbnail" : "feather"
+    },
+    {
+      "style_name" : "blueball",
+      "readable_name" : "rain",
+      "thumbnail" : "blueball"
+    },
+    {
+      "style_name" : "boat",
+      "readable_name" : "sand",
+      "thumbnail" : "boat"
+    },
+    {
+      "style_name" : "mags",
+      "readable_name" : "midnight",
+      "thumbnail" : "mags"
+    },
+    {
+      "style_name" : "manyflow",
+      "readable_name" : "freckle",
+      "thumbnail" : "manyflow"
+    },
+    {
+      "style_name" : "orbits",
+      "readable_name" : "matrix",
+      "thumbnail" : "orbits"
+    },
+    {
+      "style_name" : "purple",
+      "readable_name" : "sunset",
+      "thumbnail" : "purple"
+    },
+    {
+      "style_name" : "two",
+      "readable_name" : "stucco",
+      "thumbnail" : "two"
+    },
+    {
+      "style_name" : "girlhair",
+      "readable_name" : "dragon",
+      "thumbnail" : "girlhair"
+    }
+  ]
+}
